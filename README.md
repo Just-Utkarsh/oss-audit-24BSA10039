@@ -47,6 +47,62 @@ git clone https://github.com/yourusername/open-source-audit-toolkit.git
 cd open-source-audit-toolkit
 ```
 
+## Running the Scripts
+
+### System Identity Report
+
+`./script-1-systemidentity.sh`
+
+Displays system information such as distribution, kernel version, uptime, and hardware details.
+
+---
+
+### FOSS Package Inspector
+
+`./script-2-foss-package.sh`
+
+Inspects a predefined package (default: LibreOffice) and displays version, license, and metadata.
+
+---
+
+### Disk and Permission Auditor
+
+`./script-3-security-audit.sh`
+
+Scans directories and reports insecure permissions such as world-writable access.
+
+---
+
+### Log File Analyzer
+
+`./script-4-loganalyzer.sh <logfile> [keyword]`
+
+Examples:
+
+`./script-4-loganalyzer.sh /var/log/syslog`  
+`./script-4-loganalyzer.sh /var/log/pacman.log warning`
+
+If no logfile is provided, the script attempts to locate LibreOffice logs automatically.
+
+---
+
+### Open Source Manifesto Generator
+
+`./script-5-opensourcemanifesto.sh`
+
+Prompts for input and generates a manifesto file in the current directory.
+
+---
+
+## Additional Notes
+
+Some scripts may require elevated privileges:
+
+`sudo ./script-4-loganalyzer.sh /var/log/syslog`
+
+Ensure required utilities are installed before running the scripts.  
+Designed for terminal usage with formatted output.
+
 Make all scripts executable:
 
 ```bash
