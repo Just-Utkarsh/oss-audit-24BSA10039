@@ -45,3 +45,10 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/open-source-audit-toolkit.git
 cd open-source-audit-toolkit
+```
+
+Make all scripts executable:
+
+```bash
+chmod +x *.sh
+```
